@@ -1,0 +1,15 @@
+def calculate_love_score(name1,name2):
+    combine_name = name1+name2
+    lower_name= combine_name.lower()
+    count=0
+    count1=0
+    for i in "true":
+        count+= lower_name.count(i)
+    for p in "love":
+        count1+= lower_name.count(p)
+
+    Score= int(str(count)+str(count1))
+
+    print(f"Your Love Score is {Score}")
+
+calculate_love_score("True","Love")
